@@ -1,0 +1,51 @@
+.title {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    font-family: "Shadow Into Light", cursive;
+}
+
+p {
+    font-family: "Shadow Into Light", cursive;
+}
+
+body {
+    background-color: rgb(25, 25, 25);
+    color: white;
+}
+
+.gameboard{
+    display: grid;
+    place-items: center;
+}
+
+.move-icon {
+    width: 60px;
+}
+
+.move-button {
+    width: 120px;
+    height: 120px;
+    background: transparent;
+    border: 3px solid white;
+    border-radius: 60px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+.move-button:hover {
+    opacity: 0.5;
+}
+
+.reset-score-button {
+    background-color: white;
+    border: none;
+    font-size: 15px;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+.js-score, .js-result, .js-moves{
+    font-size: 24px;
+}
