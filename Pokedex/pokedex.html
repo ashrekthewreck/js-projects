@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <title>Pokedex</title>
+  <link rel="stylesheet" href="pokedex.css" />
+</head>
+<body>
+  <img  class="pokemon-title" src="pokemonlogo.png" alt="thelogo">
+  <audio id="bg-music" autoplay loop>
+  <source src="pokemontheme.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+    </audio>
+  
+  <div class="pokedex">
+    <!-- LEFT PANEL -->
+    <div class="left">
+      <div class="top-left">
+        <div class="lens"></div>
+        <div class="leds">
+          <span class="led red"></span>
+          <span class="led yellow"></span>
+          <span class="led green"></span>
+        </div>
+      </div>
+
+      <div class="main-screen-frame">
+        <div class="main-screen">
+             <p class="pokemon-name"></p>
+            <p class="pokemon-type"></p>
+            
+        </div>
+      </div>
+
+      <div class="bottom-left">
+        <div class="round-btn"></div>
+        <button onclick="fetchPokemon();" class="green-button">Push</button>
+        <div class="dpad"></div>
+      </div>
+      <input class="user-input" type="text" placeholder="Write a Pokemon Name">
+    </div>
+
+    <!-- HINGE -->
+    <div class="hinge"></div>
+
+    <!-- RIGHT PANEL -->
+    <div class="right">
+        <div class="secondary-screen-frame">
+        <div class="secondary-screen">
+           <img src="" alt="Pokemon Sprite" style="display: none;" class="pokemon-img">
+
+        </div>
+        </div>
+    
+      <div class="bottom-right">
+        <div class="long-green"></div>
+        <div class="yellow-btn"></div>
+      </div>
+    </div>
+  </div>
+  <script src="pokedex.js"></script>
+</body>
+</html>

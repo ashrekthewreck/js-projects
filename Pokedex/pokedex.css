@@ -1,0 +1,191 @@
+/* ---------- layout / base ---------- */
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;       
+  align-items: center;
+  background: #f5f5f5;
+}
+
+p {                               
+  font-family: "Press Start 2P", monospace;
+  font-size: 12px;               
+  line-height: 1.35;
+  margin: 2px 0;
+}
+
+.pokemon-title {
+  display: inline-block;
+  width: 500px;
+  margin-top: 32px;
+  margin-bottom: 28px;
+}
+
+.pokedex {
+  display: flex;
+  background: none;
+  font-family: sans-serif;
+  gap: 8px;
+}
+
+/* ---------- panels ---------- */
+.left, .right {
+  background: red;
+  border: 3px solid black;
+  border-radius: 6px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left  { width: 320px; height: 330px; }   
+.right { width: 330px; height: 330px; }   
+
+/* ---------- hinge ---------- */
+.hinge {
+  width: 12px;
+  background: red;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  margin: 0 3px;
+}
+
+/* LEFT SIDE OF SCREEN */
+.top-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.lens {
+  width: 45px; height: 45px;
+  background: radial-gradient(circle, lightblue, blue);
+  border: 3px solid black; border-radius: 50%;
+}
+
+.leds { 
+  display: flex; 
+  gap: 4px; 
+}
+.led  { 
+  width: 12px; 
+  height: 12px; 
+  border-radius: 50%; 
+  border: 1px solid black; 
+}
+.red { background: red; } .yellow { background: yellow; } .green { background: limegreen; }
+
+.main-screen-frame {
+  margin-top: 12px;
+  background: #2a75bb;
+  padding: 6px;
+  border: 3px solid black;
+  border-radius: 4px;
+}
+
+.main-screen {
+  width: 200px;               
+  height: 140px;                 
+  background: #4cb5f5;
+  border: 3px solid black;
+  border-radius: 4px;
+  display: flex;                
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;       
+  text-align: center;         
+  padding: 8px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.bottom-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.round-btn { 
+  width: 25px;
+  height: 25px; 
+  background: grey; 
+  border-radius: 50%; 
+}
+
+.green-button {
+  width: 80px;                   
+  height: 40px;
+  background: green;
+  border: 2px solid black;
+  font-family: "Press Start 2P", monospace;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.dpad { width: 
+  35px; height: 
+  35px; background: 
+  black; 
+}
+
+.user-input {
+  margin-top: 12px;
+  background-color: #4cb5f5;
+  text-align: center;
+  border: 3px solid black;
+  height: 24px;
+  width: 220px;                  
+}
+
+/*RIGHT SIDE OF SCREEN*/
+.secondary-screen-frame {
+  margin-top: 12px;
+  background: #2a75bb;
+  padding: 6px;
+  border: 3px solid black;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.secondary-screen {
+  width: 260px;                  
+  height: 240px;                
+  background: #4cb5f5;
+  border: 3px solid black;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.pokemon-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;           
+  image-rendering: pixelated;    
+}
+
+.bottom-right { 
+  display: flex; 
+  gap: 10px; 
+  align-items: center; 
+}
+
+.long-green { 
+  width: 80px; 
+  height: 16px; 
+  background: green; 
+  border: 2px solid black; 
+}
+
+.yellow-btn { 
+  width: 20px; 
+  height: 20px; 
+  background: gold; 
+  border-radius: 50%; 
+  border: 2px solid black; 
+}
